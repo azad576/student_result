@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <!----------- Favicon --------->
+    <link
+      rel="stylesheet"
+      href="./asset/css/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.min.css"
+    />
+
+    <!--------- Google Fonts --------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!---------- Font Awesome version 5.15.4 --------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!----------- My CSS ----------->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <button
+            href="#student_modal"
+            data-bs-toggle="modal"
+            class="btn btn-primary my-3"
+          >
+            add new sutden
+          </button>
+          <a class="btn btn-info" href="./index.html">search result</a>
+          <div class="card shadow">
+            <div class="card-body">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>photo</td>
+                    <td>Name</td>
+                    <td>Roll</td>
+                    <td>Reg</td>
+                    <td>Result</td>
+                    <td>Action</td>
+                  </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- create post  -->
+
+    <div id="student_modal" class="modal fade">
+      <div class="modal-dialog moda-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3>create post</h3>
+            <hr />
+            <div class="msg"></div>
+            <form id="forms" class="form-control" action="">
+              <div class="my-3">
+                <label for="">Name</label>
+                <input class="form-control" name="names" type="text" />
+              </div>
+
+              <div class="my-3">
+                <label for="">Roll no</label>
+                <input class="form-control" name="roll" type="text" />
+              </div>
+              <div class="my-3">
+                <label for="">Reg no</label>
+                <input class="form-control" type="text" name="reg" id="" />
+              </div>
+              <div class="my-3">
+                <label for=""> photo</label>
+                <input class="form-control" name="photo" type="text" />
+              </div>
+              <button class="w-100 btn btn-primary" type="submit">
+                create
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edite modal -->
+
+    <div id="edite_modal" class="modal fade">
+      <div class="modal-dialog moda-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3>edite post</h3>
+            <hr />
+            <div class="msg"></div>
+            <form id="edite_form" class="form-control" action="">
+              <div class="my-3">
+                <label for="">Name</label>
+                <input class="form-control" name="names" type="text" />
+              </div>
+
+              <div class="my-3">
+                <label for="">Roll no</label>
+                <input class="form-control" name="roll" type="text" />
+              </div>
+              <div class="my-3">
+                <label for="">Reg no</label>
+                <input class="form-control" type="text" name="reg" id="" />
+              </div>
+              <div class="my-3">
+                <input
+                  type="hidden"
+                  class="form-control"
+                  type="text"
+                  name="id"
+                />
+              </div>
+              <div class="my-3">
+                <label for=""> photo</label>
+                <input class="form-control" name="photo" type="text" />
+              </div>
+              <div class="my-3">
+                <img
+                  id="pphoto"
+                  src="./asset/images/Untitled design.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="w-100 btn btn-primary" type="submit">edite</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- //student resul add modal -->
+    <div id="student_result_modal" class="modal fade">
+      <div class="modal-dialog moda-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3>add result</h3>
+            <hr />
+            <div class="result_msg"></div>
+            <form id="result_form" class="form-control" action="">
+              <div class="my-3">
+                <label for="">bangla</label>
+                <input class="form-control" name="bangla" type="text" />
+              </div>
+
+              <div class="my-3">
+                <label for="">english</label>
+                <input class="form-control" name="english" type="text" />
+              </div>
+              <div class="my-3">
+                <label for="">Math</label>
+                <input class="form-control" type="text" name="math" id="" />
+              </div>
+              <div class="my-3">
+                <label for="">Since</label>
+                <input class="form-control" type="text" name="since" id="" />
+              </div>
+              <div class="my-3">
+                <label for="">Social Since</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="social_since"
+                  id=""
+                />
+              </div>
+              <div class="my-3">
+                <label for="">Reiligion</label>
+                <input class="form-control" type="text" name="religion" id="" />
+              </div>
+              <div class="my-3">
+                <input
+                  type="hidden"
+                  class="form-control"
+                  type="text"
+                  name="id"
+                />
+              </div>
+
+              <button class="w-100 btn btn-primary" type="submit">
+                Add Result
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    //veiw result -->
+    <!-- //student resul veiw modal -->
+    <div id="student_veiw_modal" class="modal fade">
+      <div class="modal-dialog moda-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h3>view and edite result</h3>
+            <hr />
+            <div class="result_msg"></div>
+            <form id="veiw_form" class="form-control" action="">
+              <div class="my-3">
+                <label for="">bangla</label>
+                <input class="form-control" name="bangla" type="text" />
+              </div>
+
+              <div class="my-3">
+                <label for="">english</label>
+                <input class="form-control" name="english" type="text" />
+              </div>
+              <div class="my-3">
+                <label for="">Math</label>
+                <input class="form-control" type="text" name="math" id="" />
+              </div>
+              <div class="my-3">
+                <label for="">Since</label>
+                <input class="form-control" type="text" name="since" id="" />
+              </div>
+              <div class="my-3">
+                <label for="">Social Since</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="social_since"
+                  id=""
+                />
+              </div>
+              <div class="my-3">
+                <label for="">Reiligion</label>
+                <input class="form-control" type="text" name="religion" id="" />
+              </div>
+              <div class="my-3">
+                <input
+                  type="hidden"
+                  class="form-control"
+                  type="text"
+                  name="id"
+                />
+              </div>
+
+              <button class="w-100 btn btn-primary" type="submit">
+                update Result
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    //viewport -->
+
+    <div id="veiw_modal" class="modal fade">
+      <div class="modal-dialog moda-dialog-centered">
+        <div class="modal-content">
+          <div class="veiw_body"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./asset/js/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.bundle.min.js"></script>
+
+    <script src="./asset/js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+    <script src="./asset/js/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.min.js"></script>
+
+    <script src="./asset/js/data.js"></script>
+    <script src="./asset/js/function.js"></script>
+    <script src="./asset/js/main.js"></script>
+  </body>
+</html>

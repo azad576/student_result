@@ -1,0 +1,55 @@
+/********** Fonts **********/
+
+/* @font-face {
+    font-family: "Segoe UI Historic", sans-serif;
+    src: url(../Fonts/Segoe\ ui\ historic.ttf);
+} */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/******** Default Css ********/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 630px;
+}
+
+li {
+  list-style: none;
+}
+
+.info {
+  text-align: center;
+}
+.info img {
+  max-width: 100%;
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+}
+.result {
+  text-align: center;
+  width: 40p;
+  width: 64%;
+  height: 29px;
+
+  margin: auto;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <!----------- Favicon --------->
+    <link
+      rel="stylesheet"
+      href="./asset/css/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.min.css"
+    />
+
+    <!--------- Google Fonts --------->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!---------- Font Awesome version 5.15.4 --------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!----------- My CSS ----------->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <a class="btn btn-info" href="./admin.html">admin panel</a>
+          <div class="card shadow">
+            <div class="card-body">
+              <h2>search student</h2>
+              <form id="search_form" action="">
+                <div class="my-3">
+                  <input
+                    name="roll"
+                    placeholder="Roll"
+                    class="form-control"
+                    type="text"
+                  />
+                </div>
+                <div class="my-3">
+                  <input
+                    name="reg"
+                    placeholder="Registration"
+                    class="form-control"
+                    type="text"
+                  />
+                </div>
+                <button type="submit" class="btn btn-info">submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result"></div>
+    <script src="./asset/js/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.bundle.min.js"></script>
+
+    <script src="./asset/js/cdn.jsdelivr.net_npm_@popperjs_core@2.9.2_dist_umd_popper.min.js"></script>
+    <script src="./asset/js/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.min.js"></script>
+    <script src="./asset/js/function.js"></script>
+    <script src="./asset/js/search.js"></script>
+  </body>
+</html>
